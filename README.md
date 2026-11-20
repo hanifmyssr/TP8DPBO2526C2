@@ -159,30 +159,7 @@ TP8DPBO2526C2/
 
 ---
 
-## 5. Cara Instalasi & Menjalankan Proyek
-
-1. **Import Database:**
-   - Buka phpMyAdmin / MySQL CLI.
-   - Eksekusi file `tp_mvc25.sql` (atau file `database/db_lecturers.sql`).
-   - Database `tp_mvc25` beserta tabel dan data awal akan dibuat secara otomatis.
-
-2. **Konfigurasi Database:**
-   - Buka [Project/config/database.php](Project/config/database.php) jika username/password MySQL Anda berbeda dari default Laragon (`root` tanpa password).
-
-3. **Akses Aplikasi:**
-   - Nyalakan Apache dan MySQL di Laragon / XAMPP.
-   - Buka browser dan arahkan ke:
-     ```
-     http://localhost/TP8DPBO2526C2/
-     ```
-     atau langsung ke:
-     ```
-     http://localhost/TP8DPBO2526C2/Project/
-     ```
-
----
-
-## 6. Fitur Keamanan & Best Practices
+## 5. Fitur Keamanan & Best Practices
 - **Prepared Statements (PDO):** Menghindari kerentanan SQL Injection pada seluruh operasi query.
 - **XSS Prevention:** Seluruh data yang ditampilkan ke antarmuka pengguna di-escape menggunakan `htmlspecialchars()`.
 - **Post/Redirect/Get (PRG) Pattern:** Mencegah pengiriman form berulang (*duplicate form submission*) saat pengguna me-refresh halaman.
@@ -190,15 +167,13 @@ TP8DPBO2526C2/
 
 ---
 
-## 7. Dokumentasi Antarmuka
+## 7. Dokumentasi
 
-| Halaman | Deskripsi |
-|---|---|
-| **Daftar Dosen** | Menampilkan tabel seluruh dosen beserta tombol aksi Edit dan Delete. |
-| **Tambah & Edit Dosen** | Form input data dosen baru dan edit data dengan validasi duplikasi NIDN/email. |
-| **Daftar Mata Kuliah** | Menampilkan kode MK, nama mata kuliah, bobot SKS, dan semester. |
-| **Tambah & Edit Mata Kuliah** | Form penambahan mata kuliah dengan validasi rentang SKS dan semester. |
-| **Daftar Jadwal Mengajar** | Menampilkan data jadwal mengajar hasil JOIN dari dosen dan mata kuliah. |
-| **Tambah & Edit Jadwal** | Form pemilihan dosen & mata kuliah menggunakan dropdown dinamis dan validasi jam. |
 
-*(Video screen record hasil pengujian fitur tersedia pada folder [Dokumentasi/](Dokumentasi/)).*
+
+
+https://github.com/user-attachments/assets/ae301060-9bad-473f-9822-e1c8509036d7
+
+
+
+
